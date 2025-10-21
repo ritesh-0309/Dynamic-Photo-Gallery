@@ -61,7 +61,7 @@ dynamic-photo-gallery/
 ## 📸 Live Preview  
 
 <p align="center">
-  <img src="thumbnail.png" alt="Dynamic Photo Gallery Preview" width="800">
+  <img src="thumbnail.webp" alt="Dynamic Photo Gallery Preview" width="800">
 </p>
 
 ## ⚡ Performance & Accessibility  
