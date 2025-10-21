@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Gallery — Immersive Photo Grid & Lightbox</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Aurora Gallery</h1>
+    <p>Experience a cinematic collection of landscapes and cityscapes curated for immersive viewing. Click any frame to launch the lightbox, navigate with arrows, and explore every detail.</p>
+  </header>
+
+  <div class="gallery-shell">
+    <div class="gallery-grid" id="gallery">
+      <!-- <figure class="feature" data-label="Skylines • New York" data-full="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1800&q=85">
+        <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80" alt="City skyline at dusk with skyscrapers glowing.">
+      </figure> -->
+      <figure class="wide" data-label="Northern Dawn • Iceland" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Sunrise casting warm light over snowy mountains.">
+      </figure>
+      <figure class="tall" data-label="Ocean Cliffside • Portugal" data-full="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Waves hitting dramatic cliffs along the coast.">
+      </figure>
+      <figure data-label="Misty Pines • British Columbia" data-full="https://images.unsplash.com/photo-1501959915551-4e8d30928317?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://images.unsplash.com/photo-1501959915551-4e8d30928317?auto=format&fit=crop&w=800&q=80" alt="Dense forest with mist rolling through tall pine trees.">
+      </figure>
+      <figure data-label="Lupine Valley • New Zealand" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Purple lupine field leading towards distant mountains.">
+      </figure>
+      <figure class="tall" data-label="Glacial Mirror • Patagonia" data-full="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Glacial lake reflecting rugged mountain range.">
+      </figure>
+      <figure data-label="Golden Steppe • Mongolia" data-full="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?auto=format&fit=crop&w=800&q=80" alt="Rolling golden hills under a soft twilight sky.">
+      </figure>
+      <figure data-label="Aurora Borealis • Norway" data-full="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=800&q=80" alt="Northern lights dancing above a snowy landscape.">
+      </figure>
+      <figure class="wide" data-label="Lavender Dusk • Provence" data-full="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1800&q=85">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80" alt="Lavender fields stretching to the horizon at sunset.">
+      </figure>
+      <figure data-label="Desert Glow • Namibia" data-full="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Sand dunes bathed in golden evening light.">
+      </figure>
+      <figure data-label="Canyon River • Utah" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b472?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80" alt="River winding through dramatic canyon walls.">
+      </figure>
+      <figure data-label="Twilight Eyes• Swiss Alps" data-full="https://images.unsplash.com/photo-1500534314209-a25ddb2bd425?auto=format&fit=crop&w=1600&q=85">
+        <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="Snow-capped peaks illuminated by twilight hues.">
+      </figure>
+    </div>
+  </div>
+
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" type="button" aria-label="Close lightbox">&times;</button>
+      <img src="" alt="">
+      <div class="lightbox-caption"></div>
+      <button class="lightbox-prev" type="button" aria-label="Previous photo">&#10094;</button>
+      <button class="lightbox-next" type="button" aria-label="Next photo">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="js/lighthouse.js"></script>
+</body>
+</html>
